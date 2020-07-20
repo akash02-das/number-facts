@@ -23,6 +23,10 @@
         #mathFact {
             display: none;
         }
+
+        #dateFact {
+            display: none;
+        }
     </style>
 </head>
 
@@ -76,12 +80,31 @@
                 </div>
             </div>
 
-        </div>
-    </div>
+            <!-- DATE FACTS -->
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-info text-white my-3 p-4">
+                    <h1>Date Facts</h1>
+                    <p>Enter a date and get a random fact</p>
 
-    <script src="number.js"></script>
-    <script src="year.js"></script>
-    <script src="math.js"></script>
+                    <div class="d-flex" id="dateInput">
+                        <input type="number" min="1" max="12" class="form-control form-control-lg mx-3" id="monthInput"
+                            placeholder="Enter month">
+                        <input type="number" min="1" max="31" class="form-control form-control-lg mx-3" id="dayInput"
+                            placeholder="Enter day">
+                    </div>
+                    <div class="card-body" id="dateFact">
+                        <h4 class="card-title">Date Fact</h4>
+                        <p class="card-text" id="dateFactText"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="number.js"></script>
+        <script src="year.js"></script>
+        <script src="math.js"></script>
+        <script src="date.js"></script>
 
 </body>
 
