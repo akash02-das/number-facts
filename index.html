@@ -15,6 +15,10 @@
         #fact {
             display: none;
         }
+
+        #yearFact {
+            display: none;
+        }
     </style>
 </head>
 
@@ -22,6 +26,8 @@
 
     <div class="container">
         <div class="row">
+
+            <!-- NUMBER FACTS -->
             <div class="col-md-6 mx-auto">
                 <div class="card bg-primary text-white mt-5 p-4">
                     <h1>Number Facts</h1>
@@ -35,10 +41,27 @@
                     </div>
                 </div>
             </div>
+
+            <!-- YEAR FACTS -->
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-success text-white mt-5 p-4">
+                    <h1>Year Facts</h1>
+                    <p>Enter any year and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" id="yearInput"
+                        placeholder="Enter any year">
+
+                    <div class="card-body" id="yearFact">
+                        <h4 class="card-title">Year Fact</h4>
+                        <p class="card-text" id="yearFactText"></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <script src="number.js"></script>
+    <script src="year.js"></script>
 
 </body>
 

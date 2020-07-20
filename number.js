@@ -3,9 +3,9 @@ let factText = document.querySelector('#factText');
 
 let numberInput = document.querySelector('#numberInput');
 // numberInput.addEventListener('input', getFactAjax);
-numberInput.addEventListener('input', getFactFetch);
+numberInput.addEventListener('input', getNumberFactFetch);
 
-// function getFactAjax() {
+// function getNumberFactAjax() {
 //     let number = numberInput.value;
 
 //     let xhr = new XMLHttpRequest();
@@ -21,7 +21,7 @@ numberInput.addEventListener('input', getFactFetch);
 //     xhr.send();
 // }
 
-function getFactFetch() {
+function getNumberFactFetch() {
     let number = numberInput.value;
 
     fetch('http://numbersapi.com/' + number)
