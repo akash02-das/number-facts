@@ -33,6 +33,9 @@
 <body class="bg-dark">
 
     <div class="container">
+
+        <h1 class="display-4 text-light text-center my-4">Number Rules The Universe</h1>
+
         <div class="row">
 
             <!-- NUMBER FACTS -->
@@ -86,12 +89,9 @@
                     <h1>Date Facts</h1>
                     <p>Enter a date and get a random fact</p>
 
-                    <div class="d-flex" id="dateInput">
-                        <input type="number" min="1" max="12" class="form-control form-control-lg mx-3" id="monthInput"
-                            placeholder="Enter month">
-                        <input type="number" min="1" max="31" class="form-control form-control-lg mx-3" id="dayInput"
-                            placeholder="Enter day">
-                    </div>
+                    <input type="number" min="1" max="31" class="form-control form-control-lg" id="dateInput"
+                        placeholder="Enter any date">
+
                     <div class="card-body" id="dateFact">
                         <h4 class="card-title">Date Fact</h4>
                         <p class="card-text" id="dateFactText"></p>
